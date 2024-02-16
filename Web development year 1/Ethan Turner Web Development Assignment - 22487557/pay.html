@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title changes the name on the tab to "Library" 
+      Also links the CSS stylesheet to this page in the head element
+      Finally, implements the script.js file to allow it to use javascript -->
+    <title>Library</title>
+    <link rel="stylesheet" href="CSS\style.css" />
+    <script src="JavaScript\script.js"></script>
+    <header>
+      <div class="taskbar">
+        <img src="Images\Booklogo.png" />
+        <ul>
+          <li><h2>The Bookshelf</h2></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section id="payment">
+      <h1>Payment Options</h1>
+      <div id="cardImage">
+        <p>Debit/Credit Card</p>
+        <img src="Images\Cardimage.jpg" height="50px" width="50px" />
+      </div>
+      <div id="cardForm">
+        <form name="payForm" onsubmit="return validation()">
+          <label for="cardnum">Card Number</label>
+          <input type="number" name="cardnum" pattern=".{16}" required/><br />
+          <label>Expiration Date</label>
+          <input type="number" placeholder="Month" name="expmonth" required />
+          <input type="number" placeholder="Year" name="expyear" required />
+          <br />
+          <label for="cvv">Security Code</label>
+          <input type="number" name="cvv" placeholder="CVV" required />
+          <br />
+          <label id="disclaimer"
+            >(3-4 digit code on the back of your card)</label
+          >
+          <br />
+          <p id="response"></p>
+          <button type="submit" id="submit">
+            Continue
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
