@@ -1,0 +1,2 @@
+This is my web development assignment from the first year of university. Although the website is quite basic, I feel it important to show how my skills have developed over my time as a student. This website is front-end only, with very basic designs for each webpage, and an unfinished request sent to an API. 
+To see my current level of skill, please view my Full stack assignment here: https://github.com/ethanthestudent28/Portfolio/tree/main/Full%20stack%20website
